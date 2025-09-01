@@ -1,0 +1,37 @@
+<dialog xmlns:jcr="http://www.jcp.org/jcr/1.0"
+        xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+        xmlns:cq="http://www.day.com/jcr/cq/1.0"
+        jcr:primaryType="cq:Dialog"
+        cq:dialogMode="floating">
+
+    <items jcr:primaryType="cq:WidgetCollection">
+        <bookRootPath
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+            fieldLabel="Book Root Page Path"
+            name="./bookRootPath"/>
+
+        <loadMoreCta
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+            fieldLabel="Load More CTA Label"
+            name="./loadMoreCta"/>
+        
+        <layoutStyle
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+            fieldLabel="Card Layout Style"
+            name="./layoutStyle">
+            <items jcr:primaryType="nt:unstructured">
+                <horizontal
+                    jcr:primaryType="nt:unstructured"
+                    text="Horizontal"
+                    value="horizontal"/>
+                <vertical
+                    jcr:primaryType="nt:unstructured"
+                    text="Vertical"
+                    value="vertical"/>
+            </items>
+        </layoutStyle>
+    </items>
+</dialog>

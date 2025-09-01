@@ -1,0 +1,55 @@
+@media (max-width : 1024px){
+    #navigation {
+        display: none;
+    }
+    #open-sidebar {
+        display: flex;
+    }
+}
+
+
+@media (max-width : 768px) {
+    #home {
+        flex-direction: column-reverse;
+    }
+    #home .text-sec {
+        width: 100%;
+    }
+    #about {
+        flex-direction: column;
+    }
+    #about .text-sec , #about .img-sec{
+        width: 100%;
+    }
+    .footer-top {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width : 640px){
+    .footer-top {
+        grid-template-columns: 1fr;
+    }
+    #contact {
+        grid-template-columns: 1fr;
+    }
+    :root {
+        --SidesPad : 10%;
+    }
+}
+
+@media (max-width : 400px){
+    .courses-grid , .team-members , .cat-grid{
+        grid-template-columns: 1fr;
+    }
+    .buy-course {
+        display: block;
+    }
+    #addTocart {
+        width: 100%;
+        justify-content: center;
+    }
+    .course-std > span {
+        font-size: .8em;
+    }
+}

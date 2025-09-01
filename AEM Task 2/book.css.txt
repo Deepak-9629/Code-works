@@ -1,0 +1,51 @@
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.book-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.book-card.horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.book-card.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.book-description {
+    font-size: 1rem;
+}
+
+.book-publish-date {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.load-more {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}

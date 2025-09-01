@@ -1,0 +1,16 @@
+<sly data-sly-use.bookModel="com.example.core.models.BookModel"/>
+
+<div class="book-container">
+    <sly data-sly-list.book="${bookModel.books}">
+        <div class="book-card ${properties.layoutStyle @ context='html'}">
+            <img src="${book.image}" alt="${book.name}" class="book-image"/>
+            <div class="book-details">
+                <h3 class="book-title">${book.name}</h3>
+                <p class="book-description">${book.description}</p>
+                <p class="book-publish-date">Published on: ${book.publishDate}</p>
+            </div>
+        </div>
+    </sly>
+
+    <button class="load-more">${bookModel.loadMoreCta}</button>
+</div>
